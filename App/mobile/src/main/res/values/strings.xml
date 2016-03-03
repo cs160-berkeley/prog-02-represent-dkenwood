@@ -1,0 +1,28 @@
+<resources>
+
+    <string name="app_name">Represent</string>
+    <string name="action_settings">Settings</string>
+    <string name="tagline">Get presidential facts on the go.</string>
+    <string name="get_started">Let's get started.</string>
+    <string name="find_reps_text">Find Your Congressional Representatives</string>
+    <string name="enter_zip">Enter Your ZIP Code</string>
+    <string name="use_curr">Use Your Current Location</string>
+    <string name="button_search">Search</string>
+    <string name="or">OR</string>
+
+    <string name="from_zip_code">From ZIP Code:</string>
+    <string name="senators">Senators</string>
+    <string name="representative">Representative</string>
+    <string name="zip_code">94704</string>
+    <string name="city_state">Berkeley, CA</string>
+    <string name="barbara">Barbara Boxer</string>
+    <string name="democrat">Democrat</string>
+    <string name="twitter_handle">/@bboxer</string>
+    <string name="tweet">It's time to put our brightest minds to work.</string>
+
+    <string name="term_ends">Term ends May 2016</string>
+    <string name="committees">Committees</string>
+    <string name="committee">&#8226; Ethics</string>
+    <string name="spon_bills">Recently Sponsored Bills</string>
+
+</resources>

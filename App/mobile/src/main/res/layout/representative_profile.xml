@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ImageView
+        android:contentDescription="@string/barbara"
+        android:id="@+id/prof_photo"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/barbara" />
+
+    <TextView
+        android:id="@+id/prof_name"
+        style="@style/ProfSenatorName"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/prof_photo"
+        android:text="@string/barbara" />
+
+    <TextView
+        android:id="@+id/prof_party"
+        style="@style/ProfParty"
+        android:gravity="center"
+        android:layout_below="@id/prof_name"
+        android:text="@string/democrat" />
+
+    <TextView
+        android:id="@+id/prof_termends"
+        style="@style/ProfTerm"
+        android:gravity="center"
+        android:layout_below="@id/prof_party"
+        android:text="@string/term_ends" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:gravity="center"
+        android:layout_below="@id/prof_termends"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="#D7D7D7" />
+
+    <TextView
+        android:id="@+id/prof_committees_title"
+        style="@style/CommitteesBills"
+        android:layout_below="@id/divider"
+        android:text="@string/committees" />
+
+    <TextView
+        android:id="@+id/prof_committee"
+        style="@style/Committee"
+        android:layout_below="@id/prof_committees_title"
+        android:text="@string/committee" />
+
+    <TextView
+        android:id="@+id/prof_bills_title"
+        style="@style/CommitteesBills"
+        android:layout_below="@id/prof_committee"
+        android:layout_marginTop="25dp"
+        android:text="@string/spon_bills" />
+
+</RelativeLayout>
