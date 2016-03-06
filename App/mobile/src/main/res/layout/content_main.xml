@@ -99,6 +99,6 @@
         android:layout_below="@id/or"
         android:layout_marginTop="25dp"
         android:text="@string/use_curr"
-        android:onClick="sendMessage" />
+        android:onClick="useCurrLoc" />
 
 </RelativeLayout>

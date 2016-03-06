@@ -3,7 +3,7 @@
     <string name="app_name">Represent</string>
     <string name="action_settings">Settings</string>
     <string name="tagline">Get presidential facts on the go.</string>
-    <string name="get_started">Let's get started.</string>
+    <string name="get_started">Let\'s get started.</string>
     <string name="find_reps_text">Find Your Congressional Representatives</string>
     <string name="enter_zip">Enter Your ZIP Code</string>
     <string name="use_curr">Use Your Current Location</string>
@@ -11,6 +11,8 @@
     <string name="or">OR</string>
 
     <string name="from_zip_code">From ZIP Code:</string>
+    <string name="from_currloc">From Your Current Location:</string>
+    <string name="address">2800 5th St, Berkeley CA</string>
     <string name="senators">Senators</string>
     <string name="representative">Representative</string>
     <string name="zip_code">94704</string>
@@ -18,11 +20,30 @@
     <string name="barbara">Barbara Boxer</string>
     <string name="democrat">Democrat</string>
     <string name="twitter_handle">/@bboxer</string>
-    <string name="tweet">It's time to put our brightest minds to work.</string>
+    <string name="tweet">It\'s time to put our brightest minds to work.</string>
+    <string name="button_email">Email</string>
+    <string name="button_website">Website</string>
 
     <string name="term_ends">Term ends May 2016</string>
     <string name="committees">Committees</string>
-    <string name="committee">&#8226; Ethics</string>
+    <string name="comm1">&#8226; Ethics</string>
+    <string name="comm2">&#8226; Environment and Public Works</string>
+    <string name="comm3">&#8226; Transportation and Infrastructure</string>
+    <string name="comm4">&#8226; Ethics</string>
+    <string name="comm5">&#8226; Clean Air and Nuclear Safety</string>
+    <string name="comm6">&#8226; Fisheries, Water, and Wildlife</string>
     <string name="spon_bills">Recently Sponsored Bills</string>
+    <string name="bill1">&#8226; Female Veteran Suicide Prevention Act</string>
+    <string name="bill2">&#8226; End of Suffering Act of 2015</string>
+    <string name="bill3">&#8226; SAFE DRONE Act of 2015</string>
+    <string name="bill4">&#8226; West Coast Ocean Protection Act</string>
+    <string name="bill1_date">2/6/16</string>
+    <string name="bill2_date">2/8/16</string>
+    <string name="bill3_date">1/27/16</string>
+    <string name="bill4_date">1/16/16</string>
+    <string name="title_activity_display_zip">Your Representatives</string>
+
+    <string name="berkeley">Berkeley, CA</string>
+    <string name="hogwarts">Hogwarts, NY</string>
 
 </resources>

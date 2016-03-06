@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.wearable.view.WatchViewStub xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/watch_view_stub"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:rectLayout="@layout/rect_activity_main"
-    app:roundLayout="@layout/round_activity_main"
-    tools:context="com.example.skylights.represent.MainActivity"
-    tools:deviceIds="wear"></android.support.wearable.view.WatchViewStub>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:gravity="center" android:layout_gravity="center"
+tools:context=".MainActivity" android:orientation="vertical" tools:deviceIds="wear_round"
+    android:background="#FFFFFF">
+
+<TextView android:id="@+id/apptitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/app_name"
+    android:textColor="#2A2A2A"
+    android:textSize="36sp"
+    android:layout_marginTop="30dp"
+    android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>
+

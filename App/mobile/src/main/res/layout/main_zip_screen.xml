@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.skylights.represent.DisplayZipActivity">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/colorPrimary" />-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <TextView
+        android:id="@+id/fromzip"
+        style="@style/FromZip"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/from_zip_code" />
+
+    <TextView
+        android:id="@+id/zipcode"
+        style="@style/ZipCode"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/fromzip"
+        android:text="@string/zip_code" />
+
+    <TextView
+        android:id="@+id/citystate"
+        style="@style/CityState"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/zipcode"
+        android:text="@string/city_state" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/repList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/citystate"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="25dp"
+    card_view:cardBackgroundColor="#F1F1F1"
+    card_view:contentPadding="15dp"
+    card_view:cardCornerRadius="3dp">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:contentDescription="@string/barbara"
+        android:id="@+id/photo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/barbara_s" />
+
+    <TextView
+        android:id="@+id/card_name"
+        style="@style/SenatorName"
+        android:layout_toRightOf="@+id/photo"
+        android:text="@string/barbara" />
+
+    <TextView
+        android:id="@+id/card_party"
+        style="@style/CardParty"
+        android:layout_below="@+id/card_name"
+        android:layout_toRightOf="@+id/photo"
+        android:text="@string/democrat" />
+
+    <TextView
+        android:id="@+id/tweet"
+        style="@style/Tweet"
+        android:layout_toRightOf="@+id/photo"
+        android:layout_below="@+id/card_party"
+        android:text="@string/tweet" />
+
+    <Button
+        android:id="@+id/button_email"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tweet"
+        android:layout_marginTop="15dp"
+        android:text="@string/button_email"
+        android:onClick="sendMessage" />
+
+    <Button
+        android:id="@+id/button_website"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tweet"
+        android:layout_toRightOf="@+id/button_email"
+        android:layout_marginTop="15dp"
+        android:text="@string/button_website"
+        android:onClick="sendMessage" />
+
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>

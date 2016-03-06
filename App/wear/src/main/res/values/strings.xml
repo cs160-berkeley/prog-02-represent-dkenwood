@@ -2,4 +2,7 @@
     <string name="app_name">Represent</string>
     <string name="hello_round">Hello Round World!</string>
     <string name="hello_square">Hello Square World!</string>
+
+    <string name="barbara">Barbara Boxer</string>
+    <string name="party">Democrat</string>
 </resources>

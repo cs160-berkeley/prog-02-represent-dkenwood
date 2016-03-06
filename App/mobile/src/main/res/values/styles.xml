@@ -62,7 +62,7 @@
     </style>
 
     <style name="FromZip">
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textStyle">bold</item>
@@ -71,7 +71,7 @@
     </style>
 
     <style name="ZipCode">
-        <item name="android:textSize">22sp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textStyle">bold</item>
@@ -80,7 +80,7 @@
     </style>
 
     <style name="CityState">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAllCaps">true</item>
@@ -146,16 +146,16 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">?attr/colorPrimary</item>
-        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginTop">1dp</item>
     </style>
 
     <style name="ProfTerm">
-        <item name="android:textSize">17sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">#AFAFAF</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginTop">1dp</item>
     </style>
 
     <style name="CommitteesBills">
@@ -164,14 +164,23 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">?attr/colorPrimaryDark</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">15dp</item>
     </style>
 
     <style name="Committee">
-        <item name="android:textSize">15sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/colorMidGray</item>
-        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="Date">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:layout_marginTop">2dp</item>
     </style>
 
 </resources>
