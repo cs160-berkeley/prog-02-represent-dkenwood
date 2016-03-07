@@ -1,20 +1,20 @@
 # PROG 02: Represent!
 
-Briefly describe your app here.
+Get presidential facts on the go.
 
 ## Authors
 
-FirstName LastName ([your_email@berkeley.edu](mailto:your_email@berkeley.edu))
+Danielle Kenwood ([kenwood@berkeley.edu](mailto:kenwood@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here] (https://link_to_your_video)
+See [demo video] (https://youtu.be/vLB8MjeP2p0)
 
 ## Screenshots
 
-<img src="screenshots/main.png" height="400" alt="Screenshot"/>
+<img src="screenshots/screenshot.png" height="400" alt="Screenshot"/>
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Any other support
+* Staff's Catnip
+* peceps on Stack Overflow for shaking functionality
