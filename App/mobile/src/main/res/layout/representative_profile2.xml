@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.skylights.represent.RepProfile2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:contentDescription="@string/barbara"
+            android:id="@+id/prof_photo"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/barbara_s" />
+
+        <TextView
+            android:id="@+id/prof_name"
+            style="@style/ProfSenatorName"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/prof_photo"
+            android:text="@string/barbara" />
+
+        <TextView
+            android:id="@+id/prof_party"
+            style="@style/ProfParty"
+            android:gravity="center"
+            android:layout_below="@id/prof_name"
+            android:text="@string/democrat" />
+
+        <TextView
+            android:id="@+id/prof_county"
+            style="@style/ProfCounty"
+            android:gravity="center"
+            android:layout_below="@id/prof_party"
+            android:text="@string/alameda" />
+
+        <TextView
+            android:id="@+id/prof_termends"
+            style="@style/ProfTerm"
+            android:gravity="center"
+            android:layout_below="@id/prof_county"
+            android:text="@string/term_ends" />
+
+        <Button
+            android:id="@+id/view_vote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prof_termends"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/view_vote"
+            android:onClick="viewVote" />
+
+        <TextView
+            android:id="@+id/prof_committees_title"
+            style="@style/CommitteesBills"
+            android:layout_below="@id/view_vote"
+            android:text="@string/committees" />
+
+        <TextView
+            android:id="@+id/comm1"
+            style="@style/Committee"
+            android:layout_below="@id/prof_committees_title"
+            android:text="@string/comm1" />
+        <TextView
+            android:id="@+id/comm2"
+            style="@style/Committee"
+            android:layout_below="@id/comm1"
+            android:text="@string/comm2" />
+        <TextView
+            android:id="@+id/comm3"
+            style="@style/Committee"
+            android:layout_below="@id/comm2"
+            android:text="@string/comm3" />
+        <TextView
+            android:id="@+id/comm4"
+            style="@style/Committee"
+            android:layout_below="@id/comm3"
+            android:text="@string/comm4" />
+        <TextView
+            android:id="@+id/comm5"
+            style="@style/Committee"
+            android:layout_below="@id/comm4"
+            android:text="@string/comm5" />
+        <TextView
+            android:id="@+id/comm6"
+            style="@style/Committee"
+            android:layout_below="@id/comm5"
+            android:text="@string/comm6" />
+
+        <TextView
+            android:id="@+id/prof_bills_title"
+            style="@style/CommitteesBills"
+            android:layout_below="@id/comm6"
+            android:layout_marginTop="25dp"
+            android:text="@string/spon_bills" />
+        <TextView
+            android:id="@+id/bill1"
+            android:layout_width="265dp"
+            style="@style/Committee"
+            android:layout_below="@id/prof_bills_title"
+            android:text="@string/bill1" />
+        <!--<TextView-->
+        <!--android:id="@+id/bill1_date"-->
+        <!--style="@style/Committee"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toRightOf="@id/bill1"-->
+        <!--android:layout_below="@id/prof_bills_title"-->
+        <!--android:text="@string/bill1" />-->
+        <TextView
+            android:id="@+id/bill2"
+            style="@style/Committee"
+            android:layout_width="265dp"
+            android:layout_below="@id/bill1"
+            android:text="@string/bill2" />
+        <TextView
+            android:id="@+id/bill3"
+            style="@style/Committee"
+            android:layout_width="265dp"
+            android:layout_below="@id/bill2"
+            android:text="@string/bill3" />
+        <TextView
+            android:id="@+id/bill4"
+            style="@style/Committee"
+            android:layout_width="265dp"
+            android:layout_below="@id/bill3"
+            android:text="@string/bill4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bill1_date"
+            style="@style/Date"
+            android:layout_below="@+id/prof_bills_title"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/bill1"
+            android:layout_alignBottom="@+id/bill1"
+            android:text="@string/bill1_date" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bill2_date"
+            android:layout_below="@+id/bill1_date"
+            style="@style/Date"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/bill2"
+            android:layout_alignBottom="@+id/bill2"
+            android:text="@string/bill2_date" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bill3_date"
+            style="@style/Date"
+            android:layout_below="@+id/bill2_date"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/bill2"
+            android:layout_alignBottom="@+id/bill3"
+            android:text="@string/bill3_date" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bill4_date2"
+            style="@style/Date"
+            android:layout_below="@+id/bill3_date"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/bill2"
+            android:layout_alignBottom="@+id/bill4"
+            android:text="@string/bill4_date" />
+
+    </RelativeLayout>
+</ScrollView>

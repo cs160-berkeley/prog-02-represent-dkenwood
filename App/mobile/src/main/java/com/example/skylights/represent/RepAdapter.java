@@ -77,20 +77,20 @@ public class RepAdapter extends RecyclerView.Adapter<RepAdapter.RepViewHolder> {
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(v.getContext(), RepProfile.class);
                     String the_name = vName.getText().toString();
                     String the_party = vParty.getText().toString();
-//                    Drawable the_photo = vPhoto.getDrawable();
-//                    Bitmap bitmap = BitmapFactory.decodeResource(v.getResources(), the_photo);
-//                    ByteArrayOutputStream baos = new ByteArrayOutputStream();
-//                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
-//                    byte[] b = baos.toByteArray();
-//
-//                    int id = context.getResources().getIdentifier(resourceName, "drawable",
-//                            context.getPackageName());
-                    intent.putExtra("the_name", the_name);
-                    intent.putExtra("the_party", the_party);
-                    v.getContext().startActivity(intent);
+
+                    if (the_name.equals("Mary Lookalike") || the_name.equals("Cedric Diggory")) {
+                        Intent intent = new Intent(v.getContext(), RepProfile2.class);
+                        intent.putExtra("the_name", the_name);
+                        intent.putExtra("the_party", the_party);
+                        v.getContext().startActivity(intent);
+                    } else {
+                        Intent intent = new Intent(v.getContext(), RepProfile.class);
+                        intent.putExtra("the_name", the_name);
+                        intent.putExtra("the_party", the_party);
+                        v.getContext().startActivity(intent);
+                    }
                 }
             });
         }

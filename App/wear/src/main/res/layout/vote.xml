@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp">
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#A8A8A8"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:text="@string/year" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#2A2A2A"
+            android:layout_below="@id/year"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:textAllCaps="true"
+            android:text="@string/title" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:gravity="center"
+            android:layout_below="@id/title"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#D7D7D7" />
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#2D9CDB"
+            android:layout_below="@id/divider"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:textAllCaps="true"
+            android:text="@string/state" />
+
+        <TextView
+            android:id="@+id/the_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#2A2A2A"
+            android:layout_below="@id/state"
+            android:textSize="12sp"
+            android:layout_marginTop="3dp"
+            android:text="@string/ca" />
+
+        <TextView
+            android:id="@+id/county"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#2D9CDB"
+            android:layout_below="@id/the_state"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:textAllCaps="true"
+            android:layout_marginTop="12dp"
+            android:text="@string/county" />
+
+        <TextView
+            android:id="@+id/the_county"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#2A2A2A"
+            android:layout_below="@id/county"
+            android:textSize="12sp"
+            android:layout_marginTop="3dp"
+            android:text="@string/alameda" />
+
+        <TextView
+            android:id="@+id/obama_votes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2D9CDB"
+            android:layout_below="@id/the_county"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:text="@string/obama_votes" />
+
+        <TextView
+            android:id="@+id/obamavotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2D9CDB"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/the_county"
+            android:layout_toEndOf="@id/obama_votes"
+            android:textAllCaps="true"
+            android:text="@string/obamavotes" />
+
+        <TextView
+            android:id="@+id/romney_votes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#EB5757"
+            android:layout_below="@id/obama_votes"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:text="@string/romney_votes" />
+
+        <TextView
+            android:id="@+id/romneyvotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#EB5757"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/obama_votes"
+            android:layout_toEndOf="@id/romney_votes"
+            android:textAllCaps="true"
+            android:text="@string/romneyvotes" />
+
+    </RelativeLayout>
+
+</ScrollView>

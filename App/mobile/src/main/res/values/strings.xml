@@ -24,7 +24,10 @@
     <string name="button_email">Email</string>
     <string name="button_website">Website</string>
 
+    <string name="alameda">Alameda County</string>
+    <string name="hogsmeade">Hogsmeade County</string>
     <string name="term_ends">Term ends May 2016</string>
+    <string name="view_vote">View County U.S. Presidential Vote</string>
     <string name="committees">Committees</string>
     <string name="comm1">&#8226; Ethics</string>
     <string name="comm2">&#8226; Environment and Public Works</string>

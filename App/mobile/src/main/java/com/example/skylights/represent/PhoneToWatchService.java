@@ -53,6 +53,9 @@ public class PhoneToWatchService extends Service {
         if (extras.getString("zip") != null) {
             send = "/zip";
             value = extras.getString("zip");
+        }  else if (extras.getString("the_county") != null) {
+            send = "/county";
+            value = extras.getString("the_county");
         } else {
             send = "/location";
             value = extras.getString("curr_zip_code");

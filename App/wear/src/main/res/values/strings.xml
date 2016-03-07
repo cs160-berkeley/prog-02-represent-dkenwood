@@ -4,5 +4,28 @@
     <string name="hello_square">Hello Square World!</string>
 
     <string name="barbara">Barbara Boxer</string>
-    <string name="party">Democrat</string>
+    <string name="democrat">Democrat</string>
+    <string name="dianne">Dianne Repubstein</string>
+    <string name="republican">Republican</string>
+    <string name="mary">Mary Lookalike</string>
+    <string name="hermione">Hermione Granger</string>
+    <string name="fleur">Fleur Delacour</string>
+    <string name="cedric">Cedric Diggory</string>
+
+    <string name="year">2012</string>
+    <string name="title">U.S. Presidential Vote</string>
+    <string name="state">State</string>
+    <string name="county">County</string>
+    <string name="obamavotes">Obama Votes</string>
+    <string name="romneyvotes">Romney Votes</string>
+    <string name="ca">California</string>
+    <string name="alameda">Alameda County</string>
+    <string name="ravenclaw">Ravenclaw</string>
+    <string name="obama_votes">85%</string>
+    <string name="romney_votes">15%</string>
+
+    <string name="merp1">Lion King</string>
+    <string name="merp2">Fa Mulan</string>
+    <string name="merp3">Finding Nemo</string>
+
 </resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/bg"-->
+    <!--android:background="@drawable/demo_bg"-->
+    <!--android:layout_marginBottom="93dp"-->
+    <!--android:layout_alignParentTop="true" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#2A2A2A"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="@string/barbara"/>
+
+        <TextView
+            android:id="@+id/party"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="#2d9cdb"
+            android:gravity="center"
+            android:text="@string/democrat"
+            android:textSize="14sp"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/party"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--android:textColor="#2d9cdb"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/democrat"-->
+        <!--android:layout_below="@+id/name"-->
+        <!--android:textSize="14sp"/>-->
+
+    </RelativeLayout>
+
+</LinearLayout>
