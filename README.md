@@ -12,7 +12,7 @@ See [demo video] (https://youtu.be/vLB8MjeP2p0)
 
 ## Screenshots
 
-<img src="screenshots/screenshot.png" height="400" alt="Screenshot"/>
+<img src="screenshots/screenshot.png" height="788" alt="Screenshot"/>
 
 ## Acknowledgments
 
