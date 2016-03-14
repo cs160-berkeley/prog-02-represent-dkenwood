@@ -53,6 +53,7 @@ public class PhoneToWatchService extends Service {
         if (extras.getString("zip") != null) {
             send = "/zip";
             value = extras.getString("zip");
+            System.out.println(value + "what the fuck phonetowatch");
         }  else if (extras.getString("the_county") != null) {
             send = "/county";
             value = extras.getString("the_county");

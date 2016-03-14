@@ -16,6 +16,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
+import com.squareup.picasso.Picasso;
+
+import org.w3c.dom.Text;
+
 /**
  * Created by skylights on 3/4/2016.
  */
@@ -33,6 +37,7 @@ public class RepProfile extends Activity {
         Intent intent = getIntent();
         String the_name = intent.getStringExtra("the_name");
         String the_party = intent.getStringExtra("the_party");
+        String the_photo = intent.getStringExtra("the_photo");
 
         TextView profname = (TextView) findViewById(R.id.prof_name);
         profname.setText(the_name);
@@ -48,24 +53,24 @@ public class RepProfile extends Activity {
         }
 
         ImageView profimage = (ImageView) findViewById(R.id.prof_photo);
-        if (the_name.equals("Barbara Boxer")) {
-            profimage.setImageResource(R.drawable.barbara_s);
-        }
-        if (the_name.equals("Hermione Granger")) {
-            profimage.setImageResource(R.drawable.hermione);
-        }
+
+        Picasso.with(getBaseContext()).load("https://theunitedstates.io/images/congress/225x275/" +
+                the_photo + ".jpg").into(profimage);
+
+//        if (the_name.equals("Barbara Boxer")) {
+////            profimage.setImageResource(R.drawable.barbara_s);
+//            Picasso.with(getBaseContext()).load("https://theunitedstates.io/images/congress/225x275/B000711.jpg").into(profimage);
+//        }
+//        if (the_name.equals("Barbara Lee")) {
+//            Picasso.with(getBaseContext()).load("https://theunitedstates.io/images/congress/225x275/L000551.jpg").into(profimage);
+//
+//        }
 //        if (the_name.equals("Mary Lookalike")) {
 //            profimage.setImageResource(R.drawable.mary);
 //        }
-        if (the_name.equals("Dianne Repubstein")) {
-            profimage.setImageResource(R.drawable.dianne_s);
-        }
-//        if (the_name.equals("Cedric Diggory")) {
-//            profimage.setImageResource(R.drawable.cedric);
+//        if (the_name.equals("Dianne Repubstein")) {
+//            profimage.setImageResource(R.drawable.dianne_s);
 //        }
-        if (the_name.equals("Fleur Delacour")) {
-            profimage.setImageResource(R.drawable.fleur);
-        }
 
 //        listView = (ListView) findViewById(R.id.committees);
 //
@@ -107,11 +112,6 @@ public class RepProfile extends Activity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
 
         switch (item.getItemId()) {
             // Respond to the action bar's Up/Home button

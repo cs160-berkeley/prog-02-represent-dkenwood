@@ -8,5 +8,7 @@ public class RepInfo {
     protected String rep_name;
     protected String party;
     protected String tweet;
-    protected int photo;
+    protected String photo;
+    protected String house;
+    protected String county;
 }

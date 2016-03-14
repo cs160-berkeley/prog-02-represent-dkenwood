@@ -35,30 +35,50 @@
         android:text="@string/democrat" />
 
     <TextView
+        android:id="@+id/house"
+        style="@style/House"
+        android:gravity="center"
+        android:layout_below="@+id/photo"
+        android:text="@string/senator" />
+
+    <TextView
         android:id="@+id/tweet"
         style="@style/Tweet"
         android:layout_toRightOf="@+id/photo"
         android:layout_below="@+id/card_party"
         android:text="@string/tweet" />
 
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/secretphoto"
+        android:gravity="center"
+        android:layout_below="@+id/tweet" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/secretcounty"
+        android:gravity="center"
+        android:layout_below="@+id/tweet" />
+
     <Button
         android:id="@+id/button_email"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tweet"
+        android:layout_below="@+id/house"
         android:layout_marginTop="15dp"
+        style="@style/button2"
         android:text="@string/button_email"
-        android:onClick="sendMessage" />
+        android:onClick="sendEmail" />
 
     <Button
         android:id="@+id/button_website"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tweet"
+        style="@style/button2"
+        android:layout_below="@+id/house"
         android:layout_toRightOf="@+id/button_email"
         android:layout_marginTop="15dp"
         android:text="@string/button_website"
-        android:onClick="sendMessage" />
+        android:layout_marginLeft="10dp"
+        android:onClick="openWebsite" />
 
 </RelativeLayout>
 

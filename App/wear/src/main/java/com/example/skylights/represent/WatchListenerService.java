@@ -20,6 +20,7 @@ public class WatchListenerService extends WearableListenerService {
         if( messageEvent.getPath().equalsIgnoreCase("/zip") ) {
             Log.d("T", "Got it!");
             String value = new String(messageEvent.getData(), StandardCharsets.UTF_8);
+            System.out.println(value + " this is in watchlisnerservice");
             Intent intent = new Intent(this, DisplayReps.class );
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             //you need to add this flag since you're starting a new activity from a service

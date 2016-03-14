@@ -18,9 +18,13 @@
     <string name="county">County</string>
     <string name="obamavotes">Obama Votes</string>
     <string name="romneyvotes">Romney Votes</string>
+    <string name="b">Brendan Boyle</string>
+    <string name="p">Patrick Toomey</string>
+    <string name="r">Robert Casey</string>
     <string name="ca">California</string>
     <string name="alameda">Alameda County</string>
-    <string name="ravenclaw">Ravenclaw</string>
+    <string name="lee">Barbara Lee</string>
+    <string name="phil">Philadelphia</string>
     <string name="obama_votes">85%</string>
     <string name="romney_votes">15%</string>
 

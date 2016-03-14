@@ -19,14 +19,22 @@
     <string name="city_state">Berkeley, CA</string>
     <string name="barbara">Barbara Boxer</string>
     <string name="democrat">Democrat</string>
-    <string name="twitter_handle">/@bboxer</string>
+    <string name="senator">Senator</string>
+    <string name="house_rep">House Rep</string>
     <string name="tweet">It\'s time to put our brightest minds to work.</string>
     <string name="button_email">Email</string>
     <string name="button_website">Website</string>
 
+    <string name="address_found">Found an address!</string>
+    <string name="no_address_found">Sorry, no address found.</string>
+    <string name="service_not_available">No geocoder available.</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used.</string>
+    <string name="no_location_data_provided">No location data provided.</string>
+    <string name="no_geocoder_available">No geocoder available.</string>
+
     <string name="alameda">Alameda County</string>
     <string name="hogsmeade">Hogsmeade County</string>
-    <string name="term_ends">Term ends May 2016</string>
+    <string name="term_ends">Term ends January 2017</string>
     <string name="view_vote">View County U.S. Presidential Vote</string>
     <string name="committees">Committees</string>
     <string name="comm1">&#8226; Ethics</string>
@@ -47,6 +55,6 @@
     <string name="title_activity_display_zip">Your Representatives</string>
 
     <string name="berkeley">Berkeley, CA</string>
-    <string name="hogwarts">Hogwarts, NY</string>
+    <string name="newyork">New York, NY</string>
 
 </resources>

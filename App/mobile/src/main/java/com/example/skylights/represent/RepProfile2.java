@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toolbar;
 
 import com.example.skylights.represent.R;
+import com.squareup.picasso.Picasso;
 
 /**
  * Created by skylights on 3/6/2016.
@@ -27,11 +28,11 @@ public class RepProfile2 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.representative_profile2);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-
         Intent intent = getIntent();
         String the_name = intent.getStringExtra("the_name");
         String the_party = intent.getStringExtra("the_party");
+        String the_photo = intent.getStringExtra("the_photo");
+        String the_county = intent.getStringExtra("the_county");
 
         TextView profname = (TextView) findViewById(R.id.prof_name);
         profname.setText(the_name);
@@ -40,6 +41,7 @@ public class RepProfile2 extends Activity {
         profparty.setText(the_party);
 
         TextView profcounty = (TextView) findViewById(R.id.prof_county);
+        profcounty.setText(the_county);
 
         if (the_party.equals("Republican")) {
             profparty.setTextColor(Color.parseColor("#EB5757"));
@@ -50,14 +52,8 @@ public class RepProfile2 extends Activity {
 
         ImageView profimage = (ImageView) findViewById(R.id.prof_photo);
 
-        if (the_name.equals("Mary Lookalike")) {
-            profimage.setImageResource(R.drawable.mary);
-            profcounty.setText(getString(R.string.alameda));
-        }
-        if (the_name.equals("Cedric Diggory")) {
-            profimage.setImageResource(R.drawable.cedric);
-            profcounty.setText(getString(R.string.hogsmeade));
-        }
+        Picasso.with(getBaseContext()).load("https://theunitedstates.io/images/congress/225x275/" +
+                the_photo + ".jpg").into(profimage);
     }
 
     @Override
@@ -73,11 +69,6 @@ public class RepProfile2 extends Activity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
 
         switch (item.getItemId()) {
             // Respond to the action bar's Up/Home button

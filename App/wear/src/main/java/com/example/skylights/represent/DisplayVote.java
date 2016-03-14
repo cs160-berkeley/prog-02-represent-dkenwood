@@ -46,14 +46,13 @@ public class DisplayVote extends Activity {
             String county = intent.getStringExtra("county");
             TextView state = (TextView) findViewById(R.id.the_state);
             TextView county_name = (TextView) findViewById(R.id.the_county);
+            county_name.setText(county);
 
             if (county.equals("Alameda County")) {
                 state.setText(getString(R.string.ca));
-                county_name.setText(county);
             }
-            if (county.equals("Hogsmeade County")) {
-                state.setText(getString(R.string.ravenclaw));
-                county_name.setText(county);
+            if (county.equals("Philadelphia County")) {
+                state.setText(getString(R.string.phil));
             }
         }
     }

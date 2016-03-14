@@ -39,13 +39,23 @@ public class GridPagerAdapter extends FragmentGridPagerAdapter {
 //        LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 //        ViewGroup customcard = (ViewGroup) inflater.inflate(R.layout.custom_card, null);
         DisplayReps.Representative rep = mReps.get(row);
-        CardFragment fragment = new MyCardFragment();
-        fragment = MyCardFragment.create(rep.getName(col), rep.getParty(col));
+        final CardFragment fragment = MyCardFragment.create(rep.getName(col), rep.getParty(col));
+        final String one_name = rep.getName(col);
 //        fragment.onCreateContentView(inflater, customcard, );
         fragment.setCardGravity(Gravity.BOTTOM);
         fragment.setExpansionEnabled(true);
         fragment.setExpansionDirection(CardFragment.EXPAND_DOWN);
         fragment.setExpansionFactor(MAXIMUM_CARD_EXPANSION_FACTOR);
+
+            //might need to fix; test if this works
+//        fragment.getView().setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent serviceIntent = new Intent(fragment.getActivity(), WatchToPhoneService.class);
+//                serviceIntent.putExtra("REP_NAME", one_name); //hash table with key and value
+//                fragment.getActivity().startService(serviceIntent);
+//            }
+//        });
         return fragment;
     }
 
